@@ -84,7 +84,7 @@ namespace VRTK.Controllables.PhysicsBased
         /// <returns>The actual position of the button.</returns>
         public override float GetValue()
         {
-            return transform.localPosition[(int)operateAxis];
+			return transform.localPosition[(int)operateAxis];
         }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace VRTK.Controllables.PhysicsBased
         /// <returns>The normalized position of the button.</returns>
         public override float GetNormalizedValue()
         {
-            return VRTK_SharedMethods.NormalizeValue(GetValue(), originalLocalPosition[(int)operateAxis], MaximumLength()[(int)operateAxis]);
+			return VRTK_SharedMethods.NormalizeValue(GetValue(), originalLocalPosition[(int)operateAxis], MaximumLength()[(int)operateAxis]);
         }
 
         /// <summary>
