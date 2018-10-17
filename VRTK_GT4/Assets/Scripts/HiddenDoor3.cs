@@ -7,7 +7,7 @@
 	using System.Collections.Generic;
 	using UnityEngine;
 
-	public class HiddenDoor1 : MonoBehaviour {
+	public class HiddenDoor3 : MonoBehaviour {
 
 		public GameObject leverControl;
 		protected float leverState;

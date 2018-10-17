@@ -1,11 +1,11 @@
 ﻿namespace VRTK.Controllables.ArtificialBased {
-	
-	using VRTK.GrabAttachMechanics;
-	using VRTK.SecondaryControllerGrabActions;
+
+	//using VRTK.Examples;
+	//using VRTK.GrabAttachMechanics;
+	//using VRTK.SecondaryControllerGrabActions;
 	using VRTK.Controllables.PhysicsBased;
 	using System.Collections;
 	using System.Collections.Generic;
-	using VRTK.Examples;
 	using UnityEngine;
 
 	public class HiddenDoor2 : MonoBehaviour {
