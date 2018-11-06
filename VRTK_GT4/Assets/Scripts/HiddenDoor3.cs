@@ -10,7 +10,7 @@
 	public class HiddenDoor3 : MonoBehaviour {
 
 		public GameObject leverControl;
-		protected float leverState;
+		private float leverState;
 
 		void Start () {
 

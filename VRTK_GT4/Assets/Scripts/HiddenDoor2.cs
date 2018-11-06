@@ -11,8 +11,8 @@
 	public class HiddenDoor2 : MonoBehaviour {
 
 		public GameObject sliderControl;
-		protected float sliderState;
-		protected float currentValue;
+		private float sliderState;
+		private float currentValue;
 
 		void Start () {
 			

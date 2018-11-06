@@ -7,7 +7,7 @@
 	public class RotateObject : MonoBehaviour {
 
 		public GameObject rotatorControl;
-		protected float rotatorState;
+		private float rotatorState;
 	
 		void Start () {
 			Debug.Log (gameObject.name);
@@ -16,7 +16,6 @@
 	
 		void Update () {
 			rotatorState = rotatorControl.GetComponent<VRTK_ArtificialRotator>().GetValue();
-			Debug.Log (rotatorState);
 			rotateObject (rotatorState);
 		}
 
