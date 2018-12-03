@@ -25,8 +25,8 @@
 			currentValue = slider2.GetComponent<VRTK_PhysicsSlider>().GetValue();
 			sliderState2 = slider2.GetComponent<VRTK_PhysicsSlider>().GetStepValue(currentValue);
 
-			Debug.Log("s1: " + sliderState1);
-			Debug.Log("s2: " + sliderState2);
+		//	Debug.Log("s1: " + sliderState1);
+		//	Debug.Log("s2: " + sliderState2);
 			if (sliderState1 == 3 && sliderState2 == 4) {
 
 				MoveDoor ();

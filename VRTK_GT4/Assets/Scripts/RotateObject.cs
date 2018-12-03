@@ -10,7 +10,7 @@
 		private float rotatorState;
 	
 		void Start () {
-			Debug.Log (gameObject.name);
+
 		}
 		
 	

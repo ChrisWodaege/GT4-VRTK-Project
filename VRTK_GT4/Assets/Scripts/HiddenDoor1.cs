@@ -14,8 +14,6 @@
 
 		void Start () {
 
-			Debug.Log (gameObject.name);
-			
 		}
 
 		void Update () {

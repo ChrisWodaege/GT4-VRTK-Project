@@ -15,8 +15,7 @@
 		private float currentValue;
 
 		void Start () {
-			
-			Debug.Log (gameObject.name);
+
 			
 		}
 
