@@ -12,7 +12,7 @@
         // Update is called once per frame
         void Update() {
             isPushed = pushDownButton.GetComponent<VRTK_PhysicsPusher>().GetNormalizedValue();
-            Debug.Log(isPushed);
+     
             if (isPushed > 0.7f)
             {
                 gameObject.SetActive(false);

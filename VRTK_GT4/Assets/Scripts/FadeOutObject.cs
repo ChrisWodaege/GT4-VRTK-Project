@@ -8,29 +8,37 @@
 
     public class FadeOutObject : MonoBehaviour
     {
-        public GameObject sliderControl;
-
-        private float switchstate;
-  
+        public GameObject SnapZone;
+        private float alpha = 1;
         private Material mat;
+        private bool onSnap;
+        private float value;
+        private bool isSnaped = false;
 
-     
         void Update()
         {
-            SetVisibility();
+            onSnap = SnapZone.GetComponent<VRTK_SnapDropZone>().ValidSnappableObjectIsHovering();
 
+            if (Input.GetMouseButton(0) && onSnap)
+            {
+                isSnaped = true;
+            }
+      
+            if (isSnaped)
+            {
+                SetVisibility();
+            }
         }
 
         void SetVisibility()
         {
-            switchstate = sliderControl.GetComponent<VRTK_ArtificialRotator>().GetNormalizedValue();
+            value += 0.005f;
+            alpha = Mathf.Lerp(1.0f, 0f, value);
 
             mat = GetComponent<Renderer>().material;
             Color currentColor = mat.color;
-            currentColor.a = switchstate;
+            currentColor.a = alpha;
             mat.color = currentColor;
-
-
         }
 
     }

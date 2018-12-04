@@ -250,6 +250,7 @@ namespace VRTK
             {
                 if (currentValidSnapInteractableObjects[i].IsGrabbed())
                 {
+                   
                     return true;
                 }
             }

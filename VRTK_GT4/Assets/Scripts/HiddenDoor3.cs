@@ -26,8 +26,12 @@
 		void deactivateDoor(float leverState) {
 
 			if(leverState > 0.9){
-				gameObject.SetActive (false);	
-			}
+                float position = transform.position.y;
+                if (position > 0)
+                {
+                    transform.Translate(Vector3.down * Time.deltaTime);
+                }
+            }
 		}
 	}
 }
